@@ -23,8 +23,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5)
-        layout.minimumInteritemSpacing = 5
-        layout.itemSize = CGSize(width: (self.collectionView.frame.size.width - 20)/3, height: self.collectionView.frame.size.height/3)
         
     }
 
@@ -39,7 +37,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.title.text = nameOfNews[indexPath.item]
         cell.newsImage.image = UIImage(named: Images[indexPath.row])
-        cell.newsImage.layer.cornerRadius = 50.0
+        cell.newsImage.layer.cornerRadius = 35.0
         cell.newsImage.clipsToBounds = true
         cell.newsImage.layer.borderWidth = 1
         cell.newsImage.layer.borderColor = UIColor(red:48/255, green:72/255, blue:120/255, alpha: 1).cgColor

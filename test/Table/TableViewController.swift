@@ -26,7 +26,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        return 120
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,7 +43,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.tableLblNews.text = newsName[indexPath.row]
         cell.tableLblDescriptions.text = newsDescriptions[indexPath.row]
         
-        cell.tableImages.layer.cornerRadius = 57.5
+        cell.tableImages.layer.cornerRadius = 46.0
         cell.tableImages.clipsToBounds = true
         
         return cell
