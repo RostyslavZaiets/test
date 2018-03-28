@@ -42,6 +42,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.tableImages.image = UIImage(named: newsImages[indexPath.row])
         cell.tableLblNews.text = newsName[indexPath.row]
         cell.tableLblDescriptions.text = newsDescriptions[indexPath.row]
+        cell.selectionStyle = .none
         
         cell.tableImages.layer.cornerRadius = 46.0
         cell.tableImages.clipsToBounds = true
